@@ -1,0 +1,5 @@
+package JDBC_Static_Query_Execute_By_execute_Method_DDL_Data_Dfination_Language;
+
+public class DDL_Query_Execute_1 {
+
+}

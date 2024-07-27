@@ -5,10 +5,10 @@ import java.sql.*;
 public class Select_Data_By_DQL_Query {
 	public static void main(String[] args) {		
 		try {
-//			Loading the Specific  Driver 
+//			
 			Class cl = Class.forName("oracle.jdbc.driver.OracleDriver");
 			
-//			Established The Connection between Application and Database
+//			
 			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:MYSYSTEM", "MyDB11AM", "123");
 			
 //			

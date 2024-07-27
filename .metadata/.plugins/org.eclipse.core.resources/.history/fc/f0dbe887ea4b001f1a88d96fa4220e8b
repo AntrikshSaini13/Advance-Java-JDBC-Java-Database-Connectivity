@@ -1,0 +1,41 @@
+package JDBC_Static_Query_Execute_By_execute_Method_DDL_Data_Dfination_Language;
+
+//import java.sql.Statement;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.SQLException;
+//import java.sql.SQLSyntaxErrorException;
+
+import java.sql.*;
+
+public class DDL_Query_Execute_1 {
+	public static void main(String[] args) throws SQLException {
+
+		try {
+//			Loading Specific JDBC Driver
+			Class cl = Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+//			Connection Established here b/w Application and DataBase
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:MYSYSTEM", "MYDB11AM", "123");
+			System.err.println("Connection is Established");
+//			Statement Interface -> It is execute Static SQl Query only
+			Statement st = con.createStatement();
+			
+//			execute() method for only DDL Query -> Data Definition Language Query
+			boolean data = st.execute("create table student (ROLLNO number(30), NAME varchar2(10), MARKS number(30))");
+			
+//			Conditional Operator/Ternary Operator
+			if(data) 
+					System.out.println("Table is not created");
+			else
+				System.out.println("table is created");
+		}
+		catch (ClassNotFoundException e) {
+			System.err.println("Connection is not Established");
+		}
+		catch(SQLSyntaxErrorException e) {
+			System.out.println("Student Table is allready available there cannot create more");
+		}
+		
+	}
+}

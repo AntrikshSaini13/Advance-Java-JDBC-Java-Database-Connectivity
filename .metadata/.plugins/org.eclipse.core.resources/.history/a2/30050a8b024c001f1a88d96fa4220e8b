@@ -1,0 +1,43 @@
+package JDBC_Static_Query_Execute_By_executeUpdate_Method_DML_Data_Defination_Language;
+
+import java.sql.*;
+
+public class Select_Data_By_DQL_Query {
+	public static void main(String[] args) {		
+		try {
+//			
+			Class cl = Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+//			
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:MYSYSTEM", "MyDB11AM", "123");
+			
+//			
+			Statement st = con.createStatement();
+			
+//			
+			ResultSet rs = st.executeQuery("SELECT * FROM STUDENTS");
+			
+//			
+			ResultSetMetaData  rm = rs.getMetaData();			
+			int columnNum = rm.getColumnCount();
+			for(int i=1; i<=columnNum; i++) {
+				System.out.print(rm.getColumnName(i)+"\t");
+			}
+			
+			System.out.println();
+//			
+			while(rs.next()) {
+				System.out.print(rs.getInt(1)+"\t");
+				System.out.print(rs.getString(2)+"\t");
+				System.out.println(rs.getInt(3)+"\t");
+			}
+			
+			
+		} catch (ClassNotFoundException e) {			
+			System.out.println(e);
+		} catch (SQLException e) {
+			System.out.println(e);
+		}
+		
+	}
+}

@@ -6,8 +6,6 @@ package JDBC_Static_Query_Execute_By_executeUpdate_Method_DML_Data_Defination_La
 //import java.sql.SQLException;
 import java.sql.*;
 
-//Program insert a record by using executeUpdate() method suitable for DMl Query only
-
 public class Update_Data_By_DML_Query {
 	public static void main(String[] args) {
 

@@ -1,0 +1,22 @@
+package Jdbc_Static_Query_Execute_By_executeQuery_Method__DQL_Data_Query_language_2;
+
+import java.sql.*;
+
+//Program to retrieve the data from database by using getInt(), getString(), Passing the parameter, 
+//it means record name than get the data
+public class GetData_getInt_getString_getInt_Method {
+	public static void main(String[] args) {
+		try {
+//			this is for loading the Driver between Application And Database
+			Class cl = Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+//			Esatblished the Connection 
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:MYSYSTEM", "MyDB11AM", "123");
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

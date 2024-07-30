@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/SRC/Oracle_Extract_File/jdbc/lib/ojdbc8_g.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,0 +1,15 @@
+package run_application_in_Eclipse;
+
+import java.sql.*;
+
+public class Connection {
+	public static void main(String[] args) {
+		try {
+			Class cl = Class.forName("oracle.jdbc.driver.OracleDriver");
+			Connection con = DriverManager.getConnection("jdbc:oracle:oci8:@MYSYSTEM","system","Satkum15!");
+			System.out.println("Connection Established");
+		} catch (Exception e) {
+			System.err.println("Connection not established");
+		}
+	}
+}

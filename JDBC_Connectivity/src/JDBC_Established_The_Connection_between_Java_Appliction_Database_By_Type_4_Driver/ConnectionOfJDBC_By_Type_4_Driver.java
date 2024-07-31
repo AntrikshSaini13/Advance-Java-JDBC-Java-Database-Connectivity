@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConnectionOfJDBC_By_Type_4_Driver {
 	public static void main(String[] args) throws SQLException {
 		try {
-			// Loading the Specfic Driver
+			// Loading the Specific Driver
 			Class cl = Class.forName("oracle.jdbc.driver.OracleDriver");
 			
 			// Connection Established b/n application and database

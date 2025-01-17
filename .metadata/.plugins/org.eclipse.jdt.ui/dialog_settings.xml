@@ -2,7 +2,8 @@
 <section name="Workbench">
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="1"/>
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="CDC-1.0/Foundation-1.0"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Softwares_Installed\Oracle\Extract_File\jdbc\lib"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Softwares_Installed\TomCat_Server\lib"/>
+	<item key="org.eclipse.jdt.ui.last.selected.project.jre" value="jre"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -30,9 +31,9 @@
 		<item key="pageIndex" value="2"/>
 	</section>
 	<section name="JavaProjectWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="619"/>
-		<item key="DIALOG_Y_ORIGIN" value="9"/>
-		<item key="DIALOG_WIDTH" value="964"/>
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="962"/>
 		<item key="DIALOG_HEIGHT" value="1030"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
